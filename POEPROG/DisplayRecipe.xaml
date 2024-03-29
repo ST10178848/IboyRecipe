@@ -1,0 +1,33 @@
+﻿<Window x:Class="POEPROG.DisplayRecipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POEPROG"
+        mc:Ignorable="d"
+        Title="DisplayRecipe" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="label" Content="DISPLAY/FILTER RECIPE" HorizontalAlignment="Left" Margin="186,10,0,0" VerticalAlignment="Top" Width="423" Height="36" FontFamily="Javanese Text" FontSize="18" HorizontalContentAlignment="Center" Background="#FFEA5D5D"/>
+        <Label x:Name="label1" Content=" Ingredient Name :" HorizontalAlignment="Left" Margin="0,66,0,0" VerticalAlignment="Top" Width="122"/>
+        <ComboBox x:Name="IngredientNamescomboBox" HorizontalAlignment="Left" Margin="105,68,0,0" VerticalAlignment="Top" Width="140" Height="24"/>
+        <ListBox x:Name="RecipesDetailslistBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="34,151,122,0" Background="#FFF7D17E"/>
+        <Button x:Name="Viewbutton" Content="Recipe with Original Quantities" HorizontalAlignment="Left" Margin="105,121,0,0" VerticalAlignment="Top" Width="191" Background="#FFAD7E7E" Height="20" Click="Viewbutton_Click"/>
+        <Button x:Name="Menubutton" Content="Menu" HorizontalAlignment="Left" Margin="714,312,0,0" VerticalAlignment="Top" Width="50" Click="Menubutton_Click"/>
+        <Button x:Name="viewScalebutton" Content="Recipe with Scaled Quanties" HorizontalAlignment="Left" Margin="435,119,0,0" VerticalAlignment="Top" Width="185" Background="#FF8BE491" RenderTransformOrigin="0.312,0.651" Click="viewScalebutton_Click"/>
+        <Label x:Name="label2" Content="OR" HorizontalAlignment="Left" Margin="356,119,0,0" VerticalAlignment="Top" Width="42"/>
+        <Label x:Name="label3" Content="OR" HorizontalAlignment="Left" Margin="250,69,0,0" VerticalAlignment="Top" Height="25"/>
+        <Label x:Name="label4" Content="Food Group :" HorizontalAlignment="Left" Margin="283,68,0,0" VerticalAlignment="Top" Width="117"/>
+        <ComboBox x:Name="FoodGroupcomboBox" HorizontalAlignment="Left" Margin="371,69,0,0" VerticalAlignment="Top" Width="168" RenderTransformOrigin="-0.043,0.672" Height="26"/>
+        <Label x:Name="label5" Content="OR" HorizontalAlignment="Left" Margin="544,69,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label6" Content="max num of Calories" HorizontalAlignment="Left" Margin="575,68,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="CaloriescomboBox" HorizontalAlignment="Left" Margin="698,71,0,0" VerticalAlignment="Top" Width="69">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FF5D2D2D" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+
+    </Grid>
+</Window>

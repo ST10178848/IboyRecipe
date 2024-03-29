@@ -1,0 +1,22 @@
+﻿<Window x:Class="POEPROG.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POEPROG"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/nrwood.jpg" Stretch="Fill"/>
+        </Grid.Background>
+        <Label x:Name="label" Content="Iboy Recipe Apllication" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="51" Width="683" FontSize="24" HorizontalContentAlignment="Center" Foreground="#FF7ED843" Background="#FFF35D5D"/>
+        <Button x:Name="recipebutton" Content="Enter Recipe" HorizontalAlignment="Center" Margin="0,92,0,0" VerticalAlignment="Top" Height="49" Width="583" Click="recipebutton_Click"/>
+        <Button x:Name="recipedetailsbutton" Content="Capture Recipe details" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="192" Margin="187,165,0,0" Click="recipedetailsbutton_Click"/>
+        <Button x:Name="scalebutton" Content="SCALE" HorizontalAlignment="Left" Margin="424,166,0,0" VerticalAlignment="Top" Height="41" Width="160" Click="scalebutton_Click"/>
+        <Button x:Name="clearbutton" Content="CLEAR" HorizontalAlignment="Left" Margin="339,304,0,0" VerticalAlignment="Top" Height="39" Width="104" Click="clearbutton_Click"/>
+        <Button x:Name="Displaybutton" Content="Display Recipe" HorizontalAlignment="Left" Margin="288,233,0,0" VerticalAlignment="Top" Height="45" Width="206" Click="Displaybutton_Click"/>
+        <Button x:Name="Exitbutton" Content="Exit" HorizontalAlignment="Left" Margin="288,371,0,0" VerticalAlignment="Top" Height="24" Width="206" Click="Exitbutton_Click"/>
+
+    </Grid>
+</Window>

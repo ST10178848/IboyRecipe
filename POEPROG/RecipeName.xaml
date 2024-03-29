@@ -1,0 +1,17 @@
+﻿<Window x:Class="POEPROG.RecipeName"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POEPROG"
+        mc:Ignorable="d"
+        Title="RecipeName" Height="400" Width="700">
+    <Grid>
+        <Label x:Name="label" Content="CAPTURE RECIPE NAME" HorizontalAlignment="Left" Margin="118,10,0,0" VerticalAlignment="Top" Height="34" Width="439" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" Background="#FFD68C8C" FontFamily="Javanese Text"/>
+        <Label x:Name="label1" Content="Enter Recipe Name : " HorizontalAlignment="Left" Margin="10,143,0,0" VerticalAlignment="Top" Height="33" Width="203" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16"/>
+        <TextBox x:Name="recipeNametextBox" HorizontalAlignment="Left" Margin="201,143,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="229" Height="49" FontSize="20" FontFamily="Javanese Text" TextAlignment="Center" BorderBrush="#FF3A5DC7"/>
+        <Button x:Name="Menubutton" Content="MENU" HorizontalAlignment="Left" Margin="278,273,0,0" VerticalAlignment="Top" Height="45" Width="60" Click="Menubutton_Click"/>
+        <Button x:Name="saveRecipebutton" Content="Save Recipe Name" HorizontalAlignment="Left" Margin="470,160,0,0" VerticalAlignment="Top" Height="24" Width="109" Click="saveRecipebutton_Click"/>
+
+    </Grid>
+</Window>

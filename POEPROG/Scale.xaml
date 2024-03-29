@@ -1,0 +1,19 @@
+﻿<Window x:Class="POEPROG.Scale"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POEPROG"
+        mc:Ignorable="d"
+        Title="Scale" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="label" Content="SCALE QUANTITIES" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="404" Height="35" FontFamily="Javanese Text" FontSize="18" Background="#FFEF7A7A" HorizontalContentAlignment="Center"/>
+        <Label x:Name="label1" Content="Choose Scale Factor :" HorizontalAlignment="Left" Margin="10,99,0,0" VerticalAlignment="Top" Height="28" Width="126"/>
+        <ComboBox x:Name="ScalecomboBox" HorizontalAlignment="Left" Margin="178,101,0,0" VerticalAlignment="Top" Width="269" RenderTransformOrigin="0.5,0.5" SelectionChanged="ScalecomboBox_SelectionChanged"/>
+        <ListBox x:Name="scalelistBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,145,184,29" Background="#FF3EFBD4"/>
+        <Button x:Name="scalebutton" Content="Scale" HorizontalAlignment="Left" Margin="501,103,0,0" VerticalAlignment="Top" Width="57" Click="scalebutton_Click"/>
+        <Button x:Name="Menubutton" Content="Menu" HorizontalAlignment="Left" Margin="675,293,0,0" VerticalAlignment="Top" Width="63" Click="Menubutton_Click"/>
+
+
+    </Grid>
+</Window>
